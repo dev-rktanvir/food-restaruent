@@ -138,7 +138,7 @@
 }
 
 .ads-heading {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 45px;
     font-weight: 700;
     color: #101010;
@@ -171,4 +171,33 @@
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+/* Footer style */
+
+.footer {
+    background-image: url('../assets/social-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hr-line {
+    border-top: 1px solid rgba(16, 16, 16, 0.2);
+    border-bottom: 1px solid rgba(16, 16, 16, 0.2);
+    padding: 30px 0;
+    margin: 32px 0;
+}
+.hr-line p{
+    font-size: 32px;
+    font-weight: 600;
+    color: #101010;
+}
+.footer-container p:nth-child(2){
+    color: red;
+    margin-top: 40px;
 }
