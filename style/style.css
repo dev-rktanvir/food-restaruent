@@ -29,8 +29,10 @@
     background-size: cover;
     height: 920px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .header-content {
@@ -58,6 +60,51 @@
     font-weight: 500;
     line-height: 28px;
     margin-bottom: 32px;
+}
+
+/* Navbar style */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 1280px;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #52C303;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #52C303;
+}
+.nav-btn a{
+    text-decoration: none;
 }
 
 /* Brand Food style */
@@ -192,12 +239,14 @@
     padding: 30px 0;
     margin: 32px 0;
 }
-.hr-line p{
+
+.hr-line p {
     font-size: 32px;
     font-weight: 600;
     color: #101010;
 }
-.footer-container p:nth-child(2){
+
+.footer-container p:nth-child(2) {
     color: red;
     margin-top: 40px;
 }
